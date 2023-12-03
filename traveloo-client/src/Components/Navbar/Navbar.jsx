@@ -31,7 +31,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`${navbarBackground} fixed top-0 w-full lg:px-20 px-10 py-5 z-50`}>
+    <nav className={`${navbarBackground} fixed  top-0 w-full px-10 lg:px-20  py-5 z-50`}>
       <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-3 flex items-center justify-between">
         <div className="col-span-1 flex items-center  flex-shrink-0 gap-3 ml-8">
         <SiYourtraveldottv className='w-10 h-10 text-secondary'/>

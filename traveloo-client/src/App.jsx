@@ -7,6 +7,7 @@ import Discover from "./Pages/Discover/Discover";
 import Offer from "./Pages/Offer/Offer";
 import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   const location = useLocation();
@@ -19,10 +20,11 @@ function App() {
 
   return (
     <>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/discover" element={<Discover />} />
-        <Route path="/offer" element={<Offer />} />
+        <Route path="/special-deal" element={<Offer />} />
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/signup" element={<SignUp />} />

@@ -1,0 +1,4 @@
+.circle1{
+    background: radial-gradient(#FF5722 0%, rgba(255, 255, 255, 0) 60%);
+    z-index: -50;
+}

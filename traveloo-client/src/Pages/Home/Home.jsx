@@ -1,10 +1,12 @@
 import React from 'react';
+import HomeBody from '../../Partials/home/HomeBody';
 
 const Home = () => {
     return (
-        <div>
-          <h1 className=''>asffgdgr</h1>
-        </div>
+       <div className='flex justify-center'>
+        
+       <HomeBody/>
+       </div>
     );
 };
 

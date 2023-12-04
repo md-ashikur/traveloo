@@ -3,7 +3,7 @@ import HomeBody from '../../Partials/home/HomeBody';
 
 const Home = () => {
     return (
-       <div className='flex justify-center'>
+       <div className='flex justify-center '>
         
        <HomeBody/>
        </div>

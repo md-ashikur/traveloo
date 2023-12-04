@@ -12,7 +12,7 @@ import clogo3 from "../../assets/images/Group-1.png";
 import clogo4 from "../../assets/images/Group 9235.png";
 import clogo5 from "../../assets/images/Group 3.png";
 import "./HomeBody.css";
-
+import HServices from "./HServices";
 
 const HomeBody = () => {
   return (
@@ -51,7 +51,7 @@ const HomeBody = () => {
           </div>
 
           <div className=" flex flex-col  items-center ">
-            <img src={layer} alt="" className=""/>
+            <img src={layer} alt="" className="" />
             <div className="relative -mt-52 grid grid-cols-2 gap-5 ">
               <div className="flex flex-col gap-5">
                 <div className="h-[300px] w-[272px] rounded-[32px] overflow-hidden">
@@ -69,14 +69,12 @@ const HomeBody = () => {
               </div>
             </div>
           </div>
-
-          
         </header>
         {/* header   end */}
       </div>
 
       {/* company logos start========== */}
-      <section className="flex flex-wrap items-center lg:justify-between justify-center px-28 gap-10 py-20">
+      <section className="flex flex-wrap items-center lg:justify-between justify-center px-28 gap-10 py-20 ">
         <img src={clogo1} alt="" />
         <img src={clogo2} alt="" />
         <img src={clogo3} alt="" />
@@ -85,15 +83,9 @@ const HomeBody = () => {
       </section>
       {/* company logos end========= */}
 
-  {/* service start ======== */}
-  <section className="pl-28 my-20 h-screen grid grid-cols-3">
-    <div>
-        <h4 className="text-primary">Services</h4>
-        <h2>Our top value categories for you</h2>
-    </div>
-    <div className="col-span-2"></div>
-  </section>
-  {/* service end======== */}
+      {/* service start ======== */}
+      <HServices />
+      {/* service end======== */}
     </div>
   );
 };

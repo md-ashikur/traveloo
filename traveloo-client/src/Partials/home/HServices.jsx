@@ -23,7 +23,7 @@ const HServices = () => {
             className="mySwiper py-10 pl-28"
           >
             {/* card -1=========== */}
-            <SwiperSlide className=" flex flex-col items-center">
+            <SwiperSlide className="service-slide flex flex-col items-center">
               <img src={destination1} alt="" className="w-16 h-16 my-5" />
 
               <div className="text-center">
@@ -36,7 +36,7 @@ const HServices = () => {
             </SwiperSlide>
 
             {/* card -2=========== */}
-            <SwiperSlide className=" flex flex-col items-center">
+            <SwiperSlide className="service-slide flex flex-col items-center">
               <img src={booking} alt="" className="w-16 h-16 my-5" />
 
               <div className="text-center">
@@ -46,7 +46,7 @@ const HServices = () => {
             </SwiperSlide>
 
             {/* card -3=========== */}
-            <SwiperSlide className=" flex flex-col items-center">
+            <SwiperSlide className="service-slide flex flex-col items-center">
               <img src={cloudy} alt="" className="w-16 h-16 my-5" />
 
               <div className="text-center">

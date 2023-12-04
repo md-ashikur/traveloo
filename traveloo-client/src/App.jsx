@@ -8,6 +8,7 @@ import Offer from "./Pages/Offer/Offer";
 import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
+import HExplore from "./Partials/home/HExplore";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
         <Route path="/discover" element={<Discover />} />
         <Route path="/special-deal" element={<Offer />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/test" element={<HExplore />} />
 
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />

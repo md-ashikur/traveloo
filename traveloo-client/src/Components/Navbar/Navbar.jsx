@@ -81,7 +81,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/signup"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-900 bg-secondary ml-2 mt-4 md:mt-0"
+              className="inline-block text-sm px-7 py-4 leading-none border rounded-full text-white border-white hover:border-transparent hover:text-gray-900 bg-secondary ml-2 mt-4 md:mt-0"
             >
               Sign Up
             </NavLink>

@@ -13,6 +13,7 @@ import clogo4 from "../../assets/images/Group 9235.png";
 import clogo5 from "../../assets/images/Group 3.png";
 import "./HomeBody.css";
 import HServices from "./HServices";
+import HExplore from "./HExplore";
 
 const HomeBody = () => {
   return (
@@ -85,7 +86,7 @@ const HomeBody = () => {
 
       {/* service start ======== */}
       <HServices />
-      {/* service end======== */}
+      <HExplore/>
     </div>
   );
 };

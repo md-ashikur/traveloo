@@ -19,7 +19,7 @@ const HomeBody = () => {
     <div className="">
       {/* <div className="circle1 min-h-[700px] min-w-[700px] absolute -top-52 -left-72 rounded-full opacity-50"></div> */}
 
-      <div className="px-28 pt-28 flex justify-center">
+      <div className="px-28 py-28 flex justify-center">
         {/* header   start */}
         <header className="flex gap-10">
           <div className="max-w-[350px] mt-16">

@@ -13,3 +13,11 @@
   padding: 64px;
   border-radius: 32px;
 }
+
+
+.explorer-slide{
+    width: 300px !important;
+    height: 470px !important;
+    background: #fff;
+
+}

@@ -16,6 +16,8 @@ import HServices from "./HServices";
 import HExplore from "./HExplore";
 import TravelPoint from "./TravelPoint";
 import Keyfeatures from "./Keyfeatures";
+import Testimonials from "./Testimonials";
+import Newsletter from "./Newsletter";
 
 const HomeBody = () => {
   return (
@@ -91,6 +93,8 @@ const HomeBody = () => {
       <HExplore/>
       <TravelPoint/>
       <Keyfeatures/>
+      <Testimonials/>
+      <Newsletter/>
     </div>
   );
 };

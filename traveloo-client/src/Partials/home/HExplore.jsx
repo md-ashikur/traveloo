@@ -17,7 +17,8 @@ const HExplore = () => {
   const navigationNextRef = React.useRef(null);
 
   return (
-    <section className="px-28 my-20 max-w-[1300px] overflow-hidden">
+    <section className="flex justify-center">
+      <div className="px-28 my-20 max-w-[1300px] overflow-hidden">
       <div className="flex justify-between items-center ">
         <div>
           <h4 className="text-primary">Top Destination</h4>
@@ -41,7 +42,7 @@ const HExplore = () => {
       </div>
 
       {/* cards----------- */}
-      <div className="  ">
+   
         <Swiper
          
           onBeforeInit={(swiper) => {
@@ -71,7 +72,7 @@ const HExplore = () => {
           loopfillgroupwithblank="true"
           spaceBetween={30}
           modules={[ Navigation]}
-          className="mySwiper my-5 py-5 "
+          className="mySwiper my-5 py-5 px-2"
         >
           {slides.map((elem) => {
             const { id, picture, title, price, description } = elem;
@@ -97,6 +98,7 @@ const HExplore = () => {
           })}
         </Swiper>
       </div>
+    
     </section>
   );
 };

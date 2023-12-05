@@ -14,10 +14,21 @@
   border-radius: 32px;
 }
 
-
+/* explore section--------------- */
 .explorer-slide{
-    width: 300px !important;
+    width: 320px !important;
     height: 470px !important;
     background: #fff;
 
 }
+
+/* key feature section-------------- */
+.key-div:hover .key-icon{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transform: scale(1.2);
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+}
+
+
+

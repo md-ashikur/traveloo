@@ -14,6 +14,8 @@ import clogo5 from "../../assets/images/Group 3.png";
 import "./HomeBody.css";
 import HServices from "./HServices";
 import HExplore from "./HExplore";
+import TravelPoint from "./TravelPoint";
+import Keyfeatures from "./Keyfeatures";
 
 const HomeBody = () => {
   return (
@@ -87,6 +89,8 @@ const HomeBody = () => {
       {/* service start ======== */}
       <HServices />
       <HExplore/>
+      <TravelPoint/>
+      <Keyfeatures/>
     </div>
   );
 };

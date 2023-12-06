@@ -9,6 +9,7 @@ import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
 import HExplore from "./Partials/home/HExplore";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
       </Routes>
+
+      <Footer/>
     </>
   );
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SpecialDealBody = () => {
   return (
-    <div className="my-28 px-28">
+    <div className="my-28 px-20">
       <div className="flex flex-col justify-center items-center">
         <h1>Affordable Travel Packages</h1>
         <p className="max-w-[800px] mt-6 text-center">

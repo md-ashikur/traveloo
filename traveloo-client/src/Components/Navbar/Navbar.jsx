@@ -33,14 +33,14 @@ const Navbar = () => {
   return (
     <nav className={`${navbarBackground} fixed  top-0 w-full px-10 lg:px-20  py-5 z-50`}>
       <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-3 flex items-center justify-between">
-        <div className="col-span-1 flex items-center  flex-shrink-0 gap-3 ml-8">
+        <div className="col-span-1 flex items-center  flex-shrink-0 gap-3 ">
         <SiYourtraveldottv className='w-10 h-10 text-secondary'/>
           <span className="font-semibold text-3xl tracking-tight">Traveloo</span>
         </div>
 
         {/* desktop------------- */}
         <div className="hidden col-span-2 md:flex md:items-center justify-between md:w-auto ">
-          <div className="text-sm flex gap-7 ">
+          <div className="text-sm flex gap-5 ">
             <NavLink
              
               to="/"
@@ -48,6 +48,13 @@ const Navbar = () => {
               className="block mt-4 md:inline-block md:mt-0   mr-4"
             >
               Home
+            </NavLink>
+            <NavLink
+              to="/about"
+             
+              className="block mt-4 md:inline-block md:mt-0   mr-4"
+            >
+             About
             </NavLink>
             <NavLink
               to="/discover"
@@ -72,7 +79,7 @@ const Navbar = () => {
             </NavLink>
           </div>
 
-          <div className="ml-4 md:ml-0 lg:mr-36 ">
+          <div className="ml-4 md:ml-0  ">
             <NavLink
               to="/login"
               className="inline-block text-sm px-4 py-2  mt-4 md:mt-0"

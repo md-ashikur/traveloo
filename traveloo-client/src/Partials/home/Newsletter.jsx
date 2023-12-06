@@ -34,7 +34,7 @@ const Newsletter = () => {
             />
             {errors.mail && <p role="alert" className="px-5 text-red-500 text-xs my-3">{errors.mail.message}</p>}
             </div>
-            <input type="submit" value="Subscribe" className="bg-secondary h-[60px] px-7 rounded-full text-base"/>
+            <input type="submit" value="Subscribe" className="hover:scale-90 transition duration-150 ease-in-out bg-secondary h-[60px] px-7 rounded-full text-base"/>
           </form>
         </div>
       </div>

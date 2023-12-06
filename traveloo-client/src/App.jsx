@@ -4,7 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import SignUp from "./pages/SignUp/SignUp";
 import Home from "./Pages/Home/Home";
 import Discover from "./Pages/Discover/Discover";
-import Offer from "./Pages/Offer/Offer";
+import Offer from "./Pages/SpecialDeal/SpecialDeal";
 import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";

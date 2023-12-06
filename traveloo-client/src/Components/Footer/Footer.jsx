@@ -59,7 +59,7 @@ const Footer = () => {
       <div className="p-4">
         <ul>
           <h3>Contact</h3>
-          <li className="mt-5"><Link to="" className="hover:text-secondary hover:pl-3 ">Why Travlog?</Link></li>
+          <li className="mt-5"><Link to="" className="hover:text-secondary hover:pl-3 ">Why Travloo?</Link></li>
           <li className="mt-5"><Link to="" className="hover:text-secondary hover:pl-3 ">Partner with us</Link></li>
           <li className="mt-5"><Link to="" className="hover:text-secondary hover:pl-3 ">FAQ’s</Link></li>
           <li className="mt-5"><Link to="" className="hover:text-secondary hover:pl-3 ">Blog</Link></li>

@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 
-// import required modules
+// import required modules 
 import {  Navigation } from "swiper/modules";
 
 const HExplore = () => {

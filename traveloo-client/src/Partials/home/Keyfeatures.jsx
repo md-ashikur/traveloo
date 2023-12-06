@@ -4,6 +4,8 @@ import { IoCalendar } from "react-icons/io5";
 import { TiLocation } from "react-icons/ti";
 import feature1 from "../../assets/images/New folder/feature1.jpg";
 import feature2 from "../../assets/images/New folder/feature2.jpg";
+import bgdesign from "../../assets/images/BACKGROUND.png";
+import { SiGooglemaps } from "react-icons/si";
 const Keyfeatures = () => {
   return (
     <section className="px-28 pt-28 grid grid-cols-2">
@@ -52,9 +54,17 @@ const Keyfeatures = () => {
 
       {/* right side----------- */}
       <div className="relative p-5">
-        <div className="w-[400px] h-[600px] rounded-full overflow-hidden">
+        <img src={bgdesign} alt="" className="absolute -top-16 -right-28 -z-20 " />
+
+        <div className="w-[400px] h-[600px]  rounded-full overflow-hidden">
           <img src={feature1} className="h-full w-auto" alt="" />
         </div>
+
+
+        <h5 className="flex gap-2 items-center absolute top-28 right-20 bg-base px-5 py-2 rounded-full">
+        <SiGooglemaps className="text-tertiary"/> Paradise on Earth
+        </h5>
+
 
         <div className="w-[350px] h-[500px] rounded-full overflow-hidden border-[24px] border-base absolute -bottom-16 left-52">
           <img src={feature2} className="h-full w-auto" alt="" />

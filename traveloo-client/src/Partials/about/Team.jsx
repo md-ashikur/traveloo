@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import TeamCards from "./TeamCards";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
 import "swiper/css";
-
-// import required modules
 import { Navigation } from "swiper/modules";
 
 const Team = () => {

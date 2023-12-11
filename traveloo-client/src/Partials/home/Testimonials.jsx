@@ -52,6 +52,9 @@ const Testimonials = () => {
           loopfillgroupwithblank="true"
           spaceBetween={30}
           modules={[Navigation]}
+          speed={1000} 
+          effect={"slide"} 
+          grabCursor={true}
           className="mySwiper !w-[920px]  py-5 mx-28 px-2 "
         >
           {clientslides.map((elem) => {

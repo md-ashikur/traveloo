@@ -2,10 +2,18 @@ import React from "react";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { LuCalendarClock } from "react-icons/lu";
 import { RiCustomerService2Line } from "react-icons/ri";
-import about from "../../assets/images/New folder/pexels-min-an-977460.jpg"
+import about from "../../assets/images/New folder/willian-justen-de-vasconcellos-7kCNXfo35aU-unsplash.jpg"
+
+import "./AboutBody.css";
+import Team from "./Team";
+
 const AboutBody = () => {
   return (
     <div>
+        <header className="header-pic mt-20 pt-5 text-white text-center flex flex-col  justify-center">
+           <h1>Looking for joy?</h1>
+           <p className="text-white py-5">Your trusted trip companion</p>
+        </header>
 
       {/* ==================Why Choose Us ==============*/}
       <section className="my-28 px-28 text-center">
@@ -64,12 +72,16 @@ const AboutBody = () => {
                 <p className="text-justify text-sm leading-loose text-black">Our mission is to curate and craft unforgettable moments, tailored to your preferences and wanderlust dreams. With a team of seasoned travelers and local experts, we pave the way for immersive cultural discoveries, breathtaking landscapes, and unique encounters. From the bustling cities to the serene corners of the globe, we&apos;re here to guide you, ensuring every step of your journey is seamless and extraordinary.</p>
             </div>
 
-            <div>
+            <div className="flex items-center">
                 <img src={about} alt="" className="rounded-lg"/>
             </div>
 
         </div>
       </section>
+
+      <Team/>
+
+    
     </div>
   );
 };

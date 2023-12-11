@@ -18,7 +18,7 @@ const HExplore = () => {
 
   return (
     <section className="flex justify-center">
-      <div className="px-28 my-20 max-w-[1300px] overflow-hidden">
+      <div className="px-28 my-20 max-w-[1345px] overflow-hidden">
       <div className="flex justify-between items-center ">
         <div>
           <h4 className="text-primary">Top Destination</h4>
@@ -63,7 +63,7 @@ const HExplore = () => {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 50,
             },
            
@@ -72,7 +72,10 @@ const HExplore = () => {
           loopfillgroupwithblank="true"
           spaceBetween={30}
           modules={[ Navigation]}
-          className="mySwiper my-5 py-5 px-2"
+          speed={1000} 
+          effect={"slide"} 
+          grabCursor={true}
+          className="mySwiper my-5 py-5 px-6"
         >
           {slides.map((elem) => {
             const { id, picture, title, price, description } = elem;
@@ -82,7 +85,7 @@ const HExplore = () => {
                 key={id}
                 className="explorer-slide shadow-lg  rounded-[32px] overflow-hidden"
               >
-                <div className="w-full h-[300px] overflow-hidden">
+                <div className="w-[350px] h-[300px] overflow-hidden">
                   <img src={picture} alt="" className="h-auto w-auto" />
                 </div>
                 <div className="p-5">

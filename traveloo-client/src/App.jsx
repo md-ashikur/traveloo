@@ -4,13 +4,13 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import SignUp from "./pages/SignUp/SignUp";
 import Home from "./Pages/Home/Home";
 import Discover from "./Pages/Discover/Discover";
-import Offer from "./Pages/SpecialDeal/SpecialDeal";
 import Contact from "./Pages/Contact/Contact";
 import Login from "./Pages/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
 import HExplore from "./Partials/home/HExplore";
 import Footer from "./Components/Footer/Footer";
 import About from "./Pages/About/About";
+import SpecialDeal from "./Pages/SpecialDeal/SpecialDeal";
 
 function App() {
   const location = useLocation();
@@ -28,7 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/discover" element={<Discover />} />
-        <Route path="/special-deal" element={<Offer />} />
+        <Route path="/special-deal" element={<SpecialDeal />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/test" element={<HExplore />} />
 

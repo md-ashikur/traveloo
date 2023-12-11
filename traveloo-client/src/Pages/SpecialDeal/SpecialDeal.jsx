@@ -1,7 +1,7 @@
 import React from 'react';
 import SpecialDealBody from '../../Partials/speacialDeal/SpecialDealBody';
 
-const Offer = () => {
+const SpecialDeal = () => {
     return (
         <div>
            <SpecialDealBody/>
@@ -9,4 +9,4 @@ const Offer = () => {
     );
 };
 
-export default Offer;
+export default SpecialDeal;

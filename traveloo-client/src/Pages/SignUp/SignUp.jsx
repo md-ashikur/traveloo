@@ -6,6 +6,6 @@ const SignUp = () => {
             sign up
         </div>
     );
-};
+}; 
 
 export default SignUp;

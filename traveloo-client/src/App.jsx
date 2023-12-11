@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
-import SignUp from "./pages/SignUp/SignUp";
 import Home from "./Pages/Home/Home";
 import Discover from "./Pages/Discover/Discover";
 import Contact from "./Pages/Contact/Contact";
@@ -11,6 +10,7 @@ import HExplore from "./Partials/home/HExplore";
 import Footer from "./Components/Footer/Footer";
 import About from "./Pages/About/About";
 import SpecialDeal from "./Pages/SpecialDeal/SpecialDeal";
+import SignUp from "./pages/SignUp/SignUp";
 
 function App() {
   const location = useLocation();

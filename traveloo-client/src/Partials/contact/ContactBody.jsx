@@ -16,7 +16,9 @@ const ContactBody = () => {
       <div className="grid grid-cols-3 gap-5 px-20 mb-20 mt-28">
         <div className="p-4">
           <div className="flex items-center my-8 gap-3">
-            <div className="flex justify-center items-center bg-secondary text-2xl w-16 h-16 rounded-full  text-white"><FaMapMarkerAlt /></div>
+            <div className="flex justify-center items-center bg-secondary text-2xl w-16 h-16 rounded-full  text-white">
+              <FaMapMarkerAlt />
+            </div>
             <h3>Location</h3>
           </div>
           <h5>Travel Agency</h5>
@@ -30,7 +32,9 @@ const ContactBody = () => {
         {/* 2nd ---------- */}
         <div className="p-4">
           <div className="flex items-center my-8 gap-3">
-            <div className="flex justify-center items-center bg-secondary text-white text-2xl w-16 h-16 rounded-full "><BiSolidPhoneCall /></div>
+            <div className="flex justify-center items-center bg-secondary text-white text-2xl w-16 h-16 rounded-full ">
+              <BiSolidPhoneCall />
+            </div>
             <h3>Give us a call</h3>
           </div>
           <h5>Mobile Number</h5>
@@ -48,7 +52,9 @@ const ContactBody = () => {
         {/* 3rd--------- */}
         <div className="p-4">
           <div className="flex items-center my-8 gap-3">
-            <div className="flex justify-center items-center bg-secondary text-white text-2xl w-16 h-16 rounded-full "><IoIosMail /></div>
+            <div className="flex justify-center items-center bg-secondary text-white text-2xl w-16 h-16 rounded-full ">
+              <IoIosMail />
+            </div>
             <h3>Write for anything</h3>
           </div>
           <h5>Quotes</h5>
@@ -65,11 +71,13 @@ const ContactBody = () => {
       </div>
 
       <div className="p-20 text-center bg-slate-100">
-        <div className="flex flex-col items-center"><h1 className="font-bold">Get in Touch</h1>
-        <p className="my-5 max-w-[600px]">
-          Write to us for personalized travel advice or for information on group
-          travel and last minute travel, all travel is insured and safe.
-        </p></div>
+        <div className="flex flex-col items-center">
+          <h1 className="font-bold">Get in Touch</h1>
+          <p className="my-5 max-w-[600px]">
+            Write to us for personalized travel advice or for information on
+            group travel and last minute travel, all travel is insured and safe.
+          </p>
+        </div>
 
         {/* form-------------- */}
         <form onSubmit={handleSubmit(onSubmit)} className="my-10">
@@ -105,10 +113,9 @@ const ContactBody = () => {
             )}
           </div>
           <div>
-            <textarea 
+            <textarea
               placeholder="Your Message"
               className="outline-none px-5 border-inherit border my-2 py-3 w-[600px] h-[120px] rounded-2xl"
-              
               {...register("messages", {
                 required: "Your Message is required",
               })}

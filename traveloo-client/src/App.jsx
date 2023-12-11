@@ -10,6 +10,7 @@ import Login from "./Pages/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
 import HExplore from "./Partials/home/HExplore";
 import Footer from "./Components/Footer/Footer";
+import About from "./Pages/About/About";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/special-deal" element={<Offer />} />
         <Route path="/contact" element={<Contact />} />

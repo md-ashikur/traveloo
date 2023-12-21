@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import SearchResult from "./SearchResult";
 
 const FindDestination = () => {
   const {
@@ -17,7 +18,7 @@ const FindDestination = () => {
        </div>
 
         {/* search bar start------------------ */}
-        <div className="w-[80vw]  bg-base h-20 mx-auto p-3 flex items-center rounded-lg my-8 overflow-hidden">
+        <div className="w-[85vw]  bg-base h-20 mx-auto p-3 flex items-center rounded-lg my-8 overflow-hidden">
           {/* form-------------- */}
           <form onSubmit={handleSubmit(onSubmit)} className="w-full gap-3">
             <div className="grid grid-cols-8">
@@ -69,6 +70,8 @@ const FindDestination = () => {
 
         {/* search bar end------------------ */}
       </div>
+
+      <SearchResult/>
     </section>
   );
 };

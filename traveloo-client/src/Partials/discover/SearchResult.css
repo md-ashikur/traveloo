@@ -1,3 +1,13 @@
+.discover-pic{
+    background-image: url("../../assets/images/New folder/mar-bustos-ARVFsI-32Uk-unsplash.jpg"),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-blend-mode: overlay;
+    
+
+}
+
 .PriceSlider {
   height: 5px;
   position: relative;

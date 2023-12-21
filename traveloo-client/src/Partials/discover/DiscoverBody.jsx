@@ -3,10 +3,10 @@ import PopularDestination from './FindDestination';
 
 const DiscoverBody = () => {
     return (
-        <div className=' my-28'>
-           <div className='px-20 text-center'>
+        <div className=' my-20'>
+           <div className='discover-pic flex flex-col  justify-center text-white px-20 text-center'>
            <h1>The World is Waiting For You</h1>
-            <p>Discover amzaing places at exclusive deals</p>
+            <p className='text-white'>Discover amzaing places at exclusive deals</p>
            </div>
 
            <PopularDestination/>

@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { AiFillEye } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 
-
-const SignUpBody = () => {
-  // show Password start===================
+const LoginBody = () => {
+    // show Password start===================
   const [passwordShown, setPasswordShown] = useState(false);
   const {
     register,
@@ -19,46 +18,16 @@ const SignUpBody = () => {
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
-  return (
-    <section className="py-20  px-20 bg-[#e5f0fd]">
+    return (
+        <section className="py-20  px-20 bg-[#e5f0fd]">
       <div className="w-[40vw] bg-white mx-auto my-7 p-10 rounded-lg">
-        <h3 className="text-center">Sign Up</h3>
+        <h3 className="text-center">Login</h3>
 
         {/* form-------------- */}
         <form onSubmit={handleSubmit(onSubmit)} className="my-5">
-          {/* first name------- */}
-          <div>
-            <input
-              placeholder="Fisrt name*"
-              className="outline-none border-inherit border my-2 px-5 py-3 w-full h-[50px] rounded-2xl"
-              {...register("firstName", {
-                required: "Your first name is required",
-              })}
-              aria-invalid={errors.firstName ? "true" : "false"}
-            />
-            {errors.firstName && (
-              <p role="alert" className="pl-2 text-red-500 text-xs ">
-                {errors.firstName.message}
-              </p>
-            )}
-          </div>
+         
 
-          {/* last name------- */}
-          <div>
-            <input
-              placeholder="Last name*"
-              className="outline-none border-inherit border my-2 px-5 py-3 w-full h-[50px] rounded-2xl"
-              {...register("lastName", {
-                required: "Your last name is required",
-              })}
-              aria-invalid={errors.lastName ? "true" : "false"}
-            />
-            {errors.lastName && (
-              <p role="alert" className="pl-2 text-red-500 text-xs ">
-                {errors.lastName.message}
-              </p>
-            )}
-          </div>
+         
           {/* email-------------- */}
           <div>
             <input
@@ -120,30 +89,19 @@ const SignUpBody = () => {
             )}
           </div>
 
-          {/* check box-------------- */}
-          <div className="flex items-center my-3">
-            <input
-              className="m-2 "
-              type="checkbox"
-              id="terms"
-              value="checkbox"
-            />
-            <label htmlFor="terms" className="text-sm ">
-              By signing up, you agree to our terms and privacy policy.
-            </label>
-          </div>
+        
 
           <input
             type="submit"
-            value="Sign Up"
+            value="Login"
             className="hover:scale-[1.04] transition duration-150 ease-in-out bg-secondary h-[60px] px-7 w-full rounded-xl text-base"
           />
         </form>
 
         <p className="text-center text-slate-700">
-          Already Have an Account?
-          <Link to="/login">
-            <span className="text-secondary"> Login</span>
+          Don&apos;t Have any Account?
+          <Link to="/signup">
+            <span className="text-secondary"> Sign Up</span>
           </Link>
         </p>
 
@@ -161,7 +119,7 @@ const SignUpBody = () => {
         </div>
       </div>
     </section>
-  );
+    );
 };
 
-export default SignUpBody;
+export default LoginBody;

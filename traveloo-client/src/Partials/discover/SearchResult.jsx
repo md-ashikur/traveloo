@@ -323,7 +323,7 @@ const SearchResult = () => {
                   London
                 </h6>
                 <p className="text-sm my-3">
-                  Westminster Borough, London{" "}
+                  Westminster Borough, London
                   <span className="text-secondary">Show on map</span> - 2 km to
                   city center
                 </p>
@@ -384,7 +384,7 @@ const SearchResult = () => {
                   London
                 </h6>
                 <p className="text-sm my-3">
-                  Westminster Borough, London{" "}
+                  Westminster Borough, London
                   <span className="text-secondary">Show on map</span> - 2 km to
                   city center
                 </p>

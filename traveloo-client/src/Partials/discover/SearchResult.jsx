@@ -1,62 +1,27 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState } from "react";
 import img1 from "../../assets/images/New folder/pexels-felix-mittermeier-2832039.jpg";
 import "./SearchResult.css";
 
 const SearchResult = () => {
-  const rangeInputs = useRef([]);
-  const priceInputs = useRef([]);
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(1000);
 
-  useEffect(() => {
-    const priceGap = 500;
-    const range = document.querySelector(".PriceSlider .progress");
+  const handleMinPriceChange = (e) => {
+    const newMinPrice = parseInt(e.target.value);
+    if (newMinPrice <= maxPrice) {
+      setMinPrice(newMinPrice);
+    }
+  };
 
-    const handlePriceInputChange = (e) => {
-      let minPrice = parseInt(priceInputs.current[0].value);
-      let maxPrice = parseInt(priceInputs.current[1].value);
+  const handleMaxPriceChange = (e) => {
+    const newMaxPrice = parseInt(e.target.value);
+    if (newMaxPrice >= minPrice) {
+      setMaxPrice(newMaxPrice);
+    }
+  };
+  const progressBarWidth = ((maxPrice - minPrice) / 1000) * 100;
 
-      if (
-        maxPrice - minPrice >= priceGap &&
-        maxPrice <= rangeInputs.current[1].max
-      ) {
-        if (e.target.className === "input-min") {
-          rangeInputs.current[0].value = minPrice;
-          range.style.left =
-            (minPrice / rangeInputs.current[0].max) * 100 + "%";
-        } else {
-          rangeInputs.current[1].value = maxPrice;
-          range.style.right =
-            100 - (maxPrice / rangeInputs.current[1].max) * 100 + "%";
-        }
-      }
-    };
-
-    const handleRangeInputChange = (e) => {
-      let minVal = parseInt(rangeInputs.current[0].value);
-      let maxVal = parseInt(rangeInputs.current[1].value);
-
-      if (maxVal - minVal < priceGap) {
-        if (e.target.className === "range-min") {
-          rangeInputs.current[0].value = maxVal - priceGap;
-        } else {
-          rangeInputs.current[1].value = minVal + priceGap;
-        }
-      } else {
-        priceInputs.current[0].value = minVal;
-        priceInputs.current[1].value = maxVal;
-        range.style.left = (minVal / rangeInputs.current[0].max) * 100 + "%";
-        range.style.right =
-          100 - (maxVal / rangeInputs.current[1].max) * 100 + "%";
-      }
-    };
-
-    priceInputs.current.forEach((input) => {
-      input.addEventListener("input", handlePriceInputChange);
-    });
-
-    rangeInputs.current.forEach((input) => {
-      input.addEventListener("input", handleRangeInputChange);
-    });
-  }, []);
+  console.log(minPrice, maxPrice);
 
   return (
     <div className="px-20 grid grid-cols-4 gap-5 my-20">
@@ -73,8 +38,8 @@ const SearchResult = () => {
                   <input
                     type="text"
                     className="input-min bg-base w-10"
-                    ref={(el) => (priceInputs.current[0] = el)}
-                    defaultValue="0"
+                    value={minPrice}
+                    onChange={handleMinPriceChange}
                     disabled
                   />
                 </div>
@@ -84,33 +49,38 @@ const SearchResult = () => {
                   <input
                     type="number"
                     className="input-max  bg-base "
-                    ref={(el) => (priceInputs.current[1] = el)}
-                    defaultValue="2000"
+                    value={maxPrice}
+                    onChange={handleMaxPriceChange}
                     disabled
                   />
                 </div>
               </div>
-              <div className="PriceSlider">
-                <div className="progress"></div>
+              <div className="PriceSlider relative">
+                <div
+                  className="progress absolute h-full bg-secondary "
+                  style={{
+                    left: `${(minPrice / 1000) * 100}%`,
+                    width: `${progressBarWidth}%`,
+                  }}
+                ></div>
               </div>
               <div className="range-input">
+                {/* range input components here */}
                 <input
                   type="range"
                   className="range-min"
                   min="0"
-                  max="10000"
-                  step="100"
-                  ref={(el) => (rangeInputs.current[0] = el)}
-                  defaultValue="2500"
+                  max="1000"
+                  value={minPrice}
+                  onChange={handleMinPriceChange}
                 />
                 <input
                   type="range"
-                  className="range-max"
+                  className="range-max "
                   min="0"
-                  max="10000"
-                  step="100"
-                  ref={(el) => (rangeInputs.current[1] = el)}
-                  defaultValue="7500"
+                  max="1000"
+                  value={maxPrice}
+                  onChange={handleMaxPriceChange}
                 />
               </div>
             </div>
@@ -222,7 +192,7 @@ const SearchResult = () => {
         </div>
 
         {/* Guest Rating=============== */}
-        <div className="py-6">
+        <div className="border-b-2 py-6">
           <h6 className="mb-3">Guest Rating</h6>
 
           <input className="m-2" type="radio" id="all" name="guestRating" />

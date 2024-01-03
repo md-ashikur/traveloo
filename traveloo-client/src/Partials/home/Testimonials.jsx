@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TestimonialCards from "./TestimonialCards";
-import layer from "../../assets/images/Layer_1.png";
+import layer from "../../assets/images/Layer1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";

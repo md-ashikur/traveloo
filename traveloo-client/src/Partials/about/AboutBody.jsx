@@ -6,6 +6,7 @@ import about from "../../assets/images/New folder/willian-justen-de-vasconcellos
 
 import "./AboutBody.css";
 import Team from "./Team";
+import Faq from "./Faq";
 
 const AboutBody = () => {
   return (
@@ -81,7 +82,8 @@ const AboutBody = () => {
 
       <Team/>
 
-    
+    {/* FAQ=============== */}
+    <Faq/>
     </div>
   );
 };
